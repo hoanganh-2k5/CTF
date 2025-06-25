@@ -1,0 +1,65 @@
+----------------------------tools--------------------------------
+- strings: hiển thị chuỗi in được
+strings file
+
+- Exiftool: kiểm tra metadata của file ảnh hoặc file thông thường
+exiftool file
+
+- zsteg: phát hiện dữ liệu ẩn trong các tệp png và bmp.
+zsteg -a file
+zsteg -E file
+
+- Binwalk: tìm kiếm các tệp nhị phân như hình ảnh và tệp âm thanh để tìm tệp và dữ liệu nhúng.
+	+ Phân tích và trích xuất dữ liệu nhúng
+	+ Phát hiện và tách các file con
+	+ Kiểm tra các file ảnh hoặc file nhị phân có chứa dữ liệu ẩn
+binwalk file
+binwalk -e file
+
+- OpenSteg: Giấu file trong ảnh và trích ra (hỗ trợ mật khẩu)
+Giấu: openstego -embed -mf secret.txt -cf input.png -sf output.png -p "pass"
+Trích: openstego -extract -sf output.png -xf output.txt -p "pass"
+
+- stegify: Giấu ảnh trong ảnh
+stegify encode --carrier in.png --secret secret.png --result out.png
+stegify decode --input out.png --output secret.png
+
+- Stegano: Thư viện Python để giấu text vào ảnh (LSB)
+python from stegano import lsb; lsb.hide('img.png', message='flag{...}')
+lsb.reveal('img.png')
+
+- Snow: Giấu văn bản bằng khoảng trắng/tab
+snow -C -p "pass" input.txt output.txt
+snow -C -p "pass" output.txt
+
+- Stegosuite: GUI tool để giấu/trích file trong ảnh PNG, JPG (mật khẩu tùy chọn)
+Mở GUI → Chọn ảnh → Giấu/trích file + tùy chọn mật khẩu
+
+- Steghide: Giấu file trong ảnh JPEG, BMP (mật khẩu)
+steghide embed -cf image.jpg -ef secret.txt -p "pass"
+steghide extract -sf image.jpg -p "pass"
+
+- Steganoroute: Thư viện Java giúp giấu dữ liệu với định tuyến ẩn (ít phổ biến)
+
+- jdvrif: Trích dữ liệu từ ảnh theo quy luật đặc biệt
+
+- OutGuess: Giấu dữ liệu trong JPEG, PPM – bỏ qua phần thống kê (anti-forensic)
+outguess -d secret.txt -p pass image.jpg out.jpg
+outguess -r out.jpg extracted.txt
+
+- Stegoshare: Tạo nhiều bản chia sẻ ảnh chứa thông tin
+
+- Wavsteg: Giấu thông tin trong file WAV (âm thanh)
+wavsteg -i input.wav -o output.wav -m "flag{...}"
+wavsteg -x output.wav
+
+- StegCracker: Brute-force pass cho file giấu bằng steghide
+stegcracker image.jpg wordlist.txt
+
+- snowdrop: Công cụ tương tự Snow, nhưng nhẹ và mã nguồn mở
+snowdrop -i input.txt -o output.txt -m "flag{...}"
+snowdrop -d output.txt
+
+- Foremost: phục hồi các tệp dựa trên tiêu đề, chân trang và cấu trúc dữ liệu bên trong của chúng, hữu ích khi xử lý hình ảnh png.
+foremost -i file
+--------------------------------others-------------------------

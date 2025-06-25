@@ -1,0 +1,5 @@
+DES: https://viblo.asia/p/encryption-des-Qpmleq27lrd
+RSA: https://bitsdeep.com/posts/attacking-rsa-for-fun-and-ctf-points-part-2/
+     https://book.hacktricks.xyz/crypto-and-stego/cryptographic-algorithms#rsa-asymmetric-crypt
+     https://github.com/giangnamG/NoteBook_For_CTFs/blob/main/crypto/modulo.md
+AES: https://www.geeksforgeeks.org/advanced-encryption-standard-aes/

@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu May 15 21:00:40 2025
+Invocation: foremost Snow.jpeg 
+Output directory: /mnt/c/Users/BRAVO15/Downloads/CTF/snowing/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: Snow.jpeg
+Start: Thu May 15 21:00:40 2025
+Length: 274 KB (280595 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	     274 KB 	          0 	 
+Finish: Thu May 15 21:00:40 2025
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu May 15 21:00:40 2025

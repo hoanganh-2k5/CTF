@@ -1,0 +1,2 @@
+Prefetch Directory is  C:\Users\BRAVO15\AppData\Local\Temp\Autopsy\dream_20250526_182642\Temp\RecentActivity\1-Autopsy_PF_DB.db3_0
+DB file is  D:\cac_file_can\ctf\dreamhack\forensics\lolololologfile\dream\ModuleOutput\prefetch\1-Autopsy_PF_DB.db3
