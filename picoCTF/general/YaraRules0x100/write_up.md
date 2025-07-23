@@ -62,3 +62,6 @@ ok socat và lấy flag thôi!
 
 ## flag
 `picoCTF{yara_rul35_r0ckzzz_d31fbfb7}`
+
+## tham khảo thêm YARA:
+https://yara.readthedocs.io/en/stable/writingrules.html#text-strings
