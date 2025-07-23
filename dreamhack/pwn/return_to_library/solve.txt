@@ -1,0 +1,8 @@
+tắt chương trình con:
+gdb
+set follow-fork-mode parent
+set detach-on-fork on
+bật:
+gdb
+set follow-fork-mode child
+set detach-on-fork off

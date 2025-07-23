@@ -1,0 +1,5 @@
+upx: công cụ nén file thực thi: .exe, ELF ...
+lệnh thông dụng:
+upx yourfile: Nén file thực thi
+upx -d yourfile: Giải nén file đã được UPX nén
+upx -l yourfile: Xem thông tin nén của file

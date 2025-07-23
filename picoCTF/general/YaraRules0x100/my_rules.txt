@@ -1,0 +1,19 @@
+rule Rule1
+{
+    strings:
+        $string_00 = "IsDebuggerP" wide ascii
+        $string_01 = "asInvoker" wide ascii
+        $string_02 = "UPX" wide ascii
+    condition:
+        all of them
+}
+
+rule Rule2
+{
+    strings:
+        $string_00 = "IsDebuggerPresent" wide ascii
+        $string_01 = "asInvoker" wide ascii
+        $string_02 = "AdjustTokenPrivileges" wide ascii
+    condition:
+        all of them
+}
