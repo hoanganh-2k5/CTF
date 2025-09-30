@@ -1,0 +1,30 @@
+# seq_protects: [('PATH', 12)]
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+protect PATH -> Protected PATH
+print FLAG -> Access denied
+print CTF_FLAG -> No such environment variable
+print ENC -> No such environment variable
+print SECRET -> No such environment variable
+print LEAK -> No such environment variable
+print TOKEN -> No such environment variable
+print API_KEY -> No such environment variable
+print AUTH -> No such environment variable
+print PASSWORD -> No such environment variable
+print KEY -> No such environment variable
+print DATA -> No such environment variable
+print PATH -> PATH=ËËÿýËþ
+print HOME -> HOME=/root
+print PWD -> PWD=/home/ctf
+print USER -> No such environment variable
+print HOSTNAME -> HOSTNAME=7db8c81c1119
+print TERM -> TERM=xterm

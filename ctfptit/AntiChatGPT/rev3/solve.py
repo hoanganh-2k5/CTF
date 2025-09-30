@@ -1,0 +1,38 @@
+from struct import pack, unpack
+
+# ciphertext
+cipher_bytes = bytes([
+    0x40,0x32,0xc4,0xda,0x67,0xa9,0x1c,0x97,
+    0x69,0xa1,0xd8,0xbe,0x1f,0xee,0xe9,0xa1,
+    0xf5,0x28,0x54,0x09,0x55,0x5d,0xc5,0x7d,
+    0xcd,0x26,0x6b,0x36,0x22,0x15,0x0c,0xe2,
+    0x5e,0x5e,0xbe,0xa5,0xff,0x4a,0x24,0x34,
+    0x05,0xf5,0x7d,0xdd,0xba,0x9f,0x62,0xeb
+])
+
+# key (local_f8)
+key = [
+    0x296b320e,0x05296b05,0x690c051b,0x09052328,
+    0x69283969,0x6911052e,0x6a1c0523,0x0e190528
+]
+
+# giả sử FUN_00401d10 và FUN_00401e20 được implement như:
+def init_sbox(key):
+    sbox = [0]*8
+    # replicate logic of FUN_00401d10 (approx)
+    # actual reverse sẽ cần toàn bộ math bitwise chính xác
+    return sbox
+
+def reverse_block(block, sbox):
+    # reverse FUN_00401e20 → lấy input gốc từ block
+    # thuật toán XOR, swap, permute → đảo ngược
+    return b"flag{demo}"  # placeholder
+
+# chia ciphertext thành block 8 byte
+blocks = [cipher_bytes[i:i+8] for i in range(0, len(cipher_bytes), 8)]
+sbox = init_sbox(key)
+flag_bytes = b""
+for b in blocks:
+    flag_bytes += reverse_block(b, sbox)
+
+print("FLAG:", flag_bytes.decode())

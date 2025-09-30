@@ -1,0 +1,9 @@
+=== TEST: 1+1 ===
+>> Numbers and strings are forbbiden
+>> 
+=== TEST: ().__class__ ===
+>> <class 'tuple'>
+>> 
+=== TEST: len ===
+>> Error
+>> 

@@ -5,3 +5,11 @@ dreamhack/forensics/Corrupted Disk Image/CorruptedDiskImage.raw
 dreamhack/forensics/FFFFAAAATTT/FFFFAAAATTTT.001
 *.pcapng
 Hacker_App
+*.jar
+.gdb_history
+john-bleeding-jumbo
+Bitlocker*
+disk*
+picoCTF/Reverse_Engineering/ARMssembly_2/ubuntu-arm64/
+picoCTF/Reverse_Engineering/ARMssembly_3/ubuntu-arm64/
+picoCTF/Reverse_Engineering/ARMssembly_4/ubuntu-arm64/

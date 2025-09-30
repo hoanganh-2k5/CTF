@@ -1,0 +1,6 @@
+FLAG -> Access denied
+HOSTNAME -> HOSTNAME=7db8c81c1119
+HOME -> HOME=/root
+PWD -> PWD=/home/ctf
+PATH -> PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+TERM -> TERM=xterm
